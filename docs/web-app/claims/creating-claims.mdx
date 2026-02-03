@@ -1,0 +1,90 @@
+---
+title: "Creating Claims"
+description: "Step-by-step guide to submitting new OHIP claims through the web app"
+---
+
+## Overview
+
+The New Claim form guides you through creating and submitting claims with built-in validation and automatic fee calculation.
+
+## Accessing the New Claim Form
+
+1. Click **New Claim** in the sidebar navigation
+2. Or click the **+** button from the Claims page
+
+## Required Information
+
+### Patient Information
+
+<Steps>
+  <Step title="Health Card Number">
+    Enter the patient's 10-digit OHIP health card number. The system validates the card format automatically.
+  </Step>
+  <Step title="Version Code">
+    Enter the 2-character version code from the health card.
+  </Step>
+  <Step title="Patient Details">
+    The system auto-fills patient name and date of birth if the patient exists in your records. Otherwise, enter:
+    - First name
+    - Last name
+    - Date of birth
+    - Sex
+  </Step>
+</Steps>
+
+### Service Information
+
+| Field | Description |
+|-------|-------------|
+| Service Date | Date the service was provided |
+| Facility | Location where service was rendered |
+| Referring Physician | If applicable, the referring provider |
+
+### Billing Codes
+
+Add one or more billing codes for the services provided:
+
+1. Search for the billing code or select from your frequently used codes
+2. Enter the quantity (number of units)
+3. The fee calculates automatically based on the OHIP schedule
+4. Add additional codes as needed
+
+### Diagnostic Codes
+
+Select the appropriate ICD diagnostic code(s) that justify the billed services.
+
+## Fee Calculation
+
+The system automatically calculates:
+- Individual service fees based on billing codes
+- Quantity multipliers
+- Total claim amount
+
+<Info>
+Fees are based on the current OHIP Schedule of Benefits. Complex billing scenarios (percentage-based codes, premium codes) are calculated automatically.
+</Info>
+
+## Validation
+
+Before submission, the system validates:
+- Health card number format
+- Required fields are complete
+- Billing code compatibility
+- Diagnostic code requirements
+
+## Submitting the Claim
+
+1. Review all entered information
+2. Click **Submit**
+3. Confirm the submission
+4. View the success confirmation with claim details
+
+## Saving as Draft
+
+Not ready to submit? Click **Save as Draft** to save your progress. Access drafts from the Claims page with the "Draft" filter.
+
+## Tips for Efficient Billing
+
+- Use the **Duplicate** feature to copy a previous claim for similar services
+- Set up frequently used billing codes in your profile
+- Use the Calendar view for bulk entry of recurring appointments

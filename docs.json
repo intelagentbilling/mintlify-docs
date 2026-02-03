@@ -1,68 +1,124 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "IntelAGENT",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5393ce",
+    "light": "#8fb8df",
+    "dark": "#4d516c"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Welcome",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "docs/getting-started/introduction",
+              "docs/getting-started/quick-start"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Setup",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "docs/getting-started/designation"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Web App",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Overview",
             "pages": [
-              "api-reference/introduction"
+              "docs/web-app/overview",
+              "docs/web-app/dashboard"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Claims",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "docs/web-app/claims/creating-claims",
+              "docs/web-app/claims/managing-claims",
+              "docs/web-app/claims/calendar-view"
+            ]
+          },
+          {
+            "group": "Patients & Billing",
+            "pages": [
+              "docs/web-app/patients/patient-list",
+              "docs/web-app/patients/billing-sheet",
+              "docs/web-app/patients/importing-data"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "docs/web-app/reports/remittance-advices",
+              "docs/web-app/reports/charges",
+              "docs/web-app/reports/exporting-data"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "docs/web-app/advanced/scenarios",
+              "docs/web-app/advanced/team-access"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Mobile App",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "docs/mobile-app/overview",
+              "docs/mobile-app/installation"
+            ]
+          },
+          {
+            "group": "Claims",
+            "pages": [
+              "docs/mobile-app/claims/submitting-claims",
+              "docs/mobile-app/claims/scanning-documents",
+              "docs/mobile-app/claims/viewing-records"
+            ]
+          },
+          {
+            "group": "Rosters",
+            "pages": [
+              "docs/mobile-app/rosters/managing-rosters",
+              "docs/mobile-app/rosters/bulk-billing"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "docs/mobile-app/revenue-tracking"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Billing & Account",
+        "groups": [
+          {
+            "group": "Plans",
+            "pages": [
+              "docs/billing/plans-pricing",
+              "docs/billing/managing-subscription"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "docs/account/profile-settings",
+              "docs/account/authentication"
             ]
           }
         ]
@@ -71,52 +127,38 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Support",
+          "href": "mailto:agent@intelagent.ca",
+          "icon": "envelope"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo.svg",
+    "dark": "/logo.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:agent@intelagent.ca"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Log In",
+      "href": "https://app.intelagent.ca/login"
     }
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+  "integrations": {
+    "intercom": {
+      "appId": "v2fuk9gg"
+    }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://intelagent.ca"
     }
   }
 }

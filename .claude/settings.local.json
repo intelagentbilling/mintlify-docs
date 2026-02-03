@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:intelagent.ca)",
+      "WebFetch(domain:www.intelagent.ca)",
+      "Bash(grep:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:demo.intelagent.ca)",
+      "WebFetch(domain:www.dr-bill.ca)",
+      "Bash(ls:*)",
+      "WebFetch(domain:app.intelagent.ca)",
+      "WebFetch(domain:www.cab.md)",
+      "WebFetch(domain:dr-bill.ca)"
+    ]
+  }
+}
