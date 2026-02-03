@@ -97,7 +97,8 @@
   },
   "logo": {
     "light": "/logo.svg",
-    "dark": "/logo.svg"
+    "dark": "/logo.svg",
+    "height": 32
   },
   "navbar": {
     "links": [
