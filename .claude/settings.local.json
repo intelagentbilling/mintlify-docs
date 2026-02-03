@@ -10,7 +10,9 @@
       "Bash(ls:*)",
       "WebFetch(domain:app.intelagent.ca)",
       "WebFetch(domain:www.cab.md)",
-      "WebFetch(domain:dr-bill.ca)"
+      "WebFetch(domain:dr-bill.ca)",
+      "Bash(openssl s_client:*)",
+      "Bash(openssl x509:*)"
     ]
   }
 }
