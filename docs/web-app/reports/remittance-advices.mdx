@@ -1,0 +1,81 @@
+---
+title: "Remittance Advices"
+description: "View and analyze payment records from the Ministry of Health"
+---
+
+## Overview
+
+Remittance Advices (RAs) are payment notifications from the Ministry of Health detailing which claims were paid, partially paid, or rejected.
+
+## Accessing Remittance Advices
+
+Navigate to **Reports** > **Remittance Advices** in the sidebar.
+
+## Understanding Remittance Advices
+
+Each remittance advice contains:
+- **RA Number** - Unique identifier
+- **Payment Date** - When payment was issued
+- **Total Amount** - Sum of all payments
+- **Claim Count** - Number of claims processed
+
+## Viewing RA Details
+
+Click on a remittance advice to see:
+
+### Summary
+- Total paid amount
+- Number of claims paid in full
+- Number of claims partially paid
+- Number of claims rejected
+
+### Claim Breakdown
+
+Each claim in the RA shows:
+| Field | Description |
+|-------|-------------|
+| Patient | Patient name and health card |
+| Service Date | Date of service |
+| Billing Code | Service code billed |
+| Billed Amount | What you claimed |
+| Paid Amount | What was paid |
+| Explanation Code | Reason for adjustment (if any) |
+
+## Explanation Codes
+
+When a claim is adjusted or rejected, an explanation code indicates why:
+
+| Code | Meaning |
+|------|---------|
+| V1 | Health card not valid on service date |
+| R1 | Patient not eligible |
+| P1 | Service already paid |
+| ... | See full list in OHIP documentation |
+
+<Info>
+Click on an explanation code to see the full description and recommended action.
+</Info>
+
+## Filtering and Search
+
+- Filter by date range
+- Search by patient name or health card
+- Filter by payment status (paid, partial, rejected)
+
+## Reconciliation
+
+The RA view helps with reconciliation:
+- Compare billed vs. paid amounts
+- Identify rejected claims for resubmission
+- Track partial payments
+
+## Actions
+
+From an RA detail page, you can:
+- **Export to Excel** - Download for accounting
+- **Print** - Generate a printable version
+- **Resubmit Rejected** - Create corrected claims for rejected items
+
+## Notifications
+
+Configure notifications in Settings to receive alerts when new remittance advices are available.

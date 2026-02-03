@@ -1,0 +1,96 @@
+---
+title: "Patient List"
+description: "Manage patient rosters and organize patients by facility"
+---
+
+## Overview
+
+The Patient List allows you to manage patient rosters, associate patients with facilities, and streamline billing for recurring patients.
+
+## Accessing Patient List
+
+Click **Patient List** in the sidebar navigation.
+
+## Viewing Patients
+
+The patient list displays:
+- Patient name
+- Health card number
+- Associated facility
+- Roster membership
+- Last service date
+
+## Managing Rosters
+
+### What is a Roster?
+
+A roster is a group of patients associated with a specific facility or billing configuration. Rosters are useful for:
+- Clinic patients seen regularly
+- Long-term care facilities
+- Group billing scenarios
+
+### Creating a Roster
+
+1. Click **Add Roster**
+2. Enter roster name
+3. Select associated facility
+4. Configure default billing codes (optional)
+5. Click **Save**
+
+### Adding Patients to a Roster
+
+<Tabs>
+  <Tab title="Search">
+    1. Select the roster
+    2. Click **Add Patient**
+    3. Search by name or health card number
+    4. Select the patient from results
+  </Tab>
+  <Tab title="Manual Entry">
+    1. Select the roster
+    2. Click **Add Patient**
+    3. Choose **Manual Entry**
+    4. Enter patient details
+    5. Click **Add**
+  </Tab>
+</Tabs>
+
+### Removing Patients
+
+1. Find the patient in the roster
+2. Click the remove icon
+3. Confirm removal
+
+<Note>
+Removing a patient from a roster doesn't delete their records or claims.
+</Note>
+
+## Billing Code Associations
+
+Assign default billing codes to a roster:
+
+1. Select the roster
+2. Click **Manage Billing Codes**
+3. Add or remove billing codes
+4. These codes will pre-populate when creating claims for roster patients
+
+## Facility Associations
+
+Each roster can be associated with a facility:
+- Claims for roster patients default to this facility
+- Useful for multi-location practices
+- Can be overridden on individual claims
+
+## Filtering and Search
+
+- Search by patient name or health card number
+- Filter by roster
+- Filter by facility
+- Sort by name, last visit, or health card number
+
+## Bulk Actions
+
+Select multiple patients to:
+- Move to a different roster
+- Create claims for all selected
+- Export patient list

@@ -1,0 +1,100 @@
+---
+title: "Billing Sheet"
+description: "Spreadsheet-style interface for efficient bulk billing entry"
+---
+
+## Overview
+
+The Billing Sheet provides a spreadsheet-like interface for rapid data entry, ideal for entering multiple claims quickly.
+
+## Accessing the Billing Sheet
+
+Click **Billing Sheet** in the sidebar navigation.
+
+## Interface Layout
+
+The billing sheet displays a grid with columns for:
+- Patient (name or health card)
+- Service Date
+- Facility
+- Billing Code(s)
+- Diagnostic Code(s)
+- Quantity
+- Fee (auto-calculated)
+- Status
+
+## Adding Entries
+
+### Row-by-Row Entry
+
+1. Click on an empty row
+2. Enter patient information (name search or health card number)
+3. Tab to move between columns
+4. Enter service date, facility, and codes
+5. Press Enter to add a new row
+
+### Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| Tab | Move to next cell |
+| Shift+Tab | Move to previous cell |
+| Enter | Confirm row and add new |
+| Escape | Cancel current edit |
+| Ctrl+D | Duplicate row |
+
+## Auto-Complete
+
+The billing sheet offers intelligent auto-complete for:
+- Patient names (searches your patient records)
+- Billing codes (by code or description)
+- Diagnostic codes (by code or description)
+- Facilities (from your associated facilities)
+
+## Fee Calculation
+
+Fees are calculated automatically as you enter billing codes:
+- Base fee from OHIP schedule
+- Quantity multipliers applied
+- Running total displayed
+
+## Validation
+
+Rows are validated in real-time:
+- **Green** - Valid and ready to submit
+- **Yellow** - Missing optional information
+- **Red** - Error that must be corrected
+
+Hover over highlighted cells to see specific validation messages.
+
+## Submitting Claims
+
+### Individual Submission
+
+Click the submit button on a single row to submit that claim.
+
+### Bulk Submission
+
+1. Review all entries
+2. Click **Submit All**
+3. Valid claims are submitted
+4. Invalid claims remain for correction
+
+## Saving Progress
+
+The billing sheet auto-saves your work. You can:
+- Close the browser and return later
+- Entries remain until submitted or deleted
+
+## Best Practices
+
+<Tip>
+The Billing Sheet works best for:
+- End-of-day batch entry
+- Transcribing from paper records
+- High-volume billing days
+</Tip>
+
+## Exporting Data
+
+Export your billing sheet entries to CSV for record-keeping or external processing.

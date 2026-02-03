@@ -1,0 +1,99 @@
+---
+title: "Importing Data"
+description: "Bulk upload claims and patient data via CSV or Excel files"
+---
+
+## Overview
+
+The Import feature allows you to upload large amounts of data from spreadsheet files, saving time on manual entry.
+
+## Supported File Formats
+
+- CSV (.csv)
+- Excel (.xlsx, .xls)
+
+## Accessing Import
+
+Click **Import** in the sidebar navigation.
+
+## Import Process
+
+<Steps>
+  <Step title="Upload File">
+    Drag and drop your file onto the upload area, or click to browse and select a file.
+  </Step>
+  <Step title="Map Fields">
+    Match columns from your file to IntelAGENT fields. The system attempts to auto-detect common column names.
+  </Step>
+  <Step title="Validate">
+    The system checks each row for errors. Review and correct any issues.
+  </Step>
+  <Step title="Preview">
+    Review the data that will be imported before confirming.
+  </Step>
+  <Step title="Import">
+    Click **Import** to process the data. Progress is displayed in real-time.
+  </Step>
+</Steps>
+
+## Required Columns
+
+At minimum, your import file must contain:
+
+| Column | Description | Example |
+|--------|-------------|---------|
+| Health Card Number | 10-digit OHIP number | 1234567890 |
+| Version Code | 2-character code | AB |
+| Service Date | Date of service | 2024-01-15 |
+| Billing Code | OHIP billing code | A001A |
+
+## Optional Columns
+
+| Column | Description |
+|--------|-------------|
+| Patient First Name | Auto-filled if patient exists |
+| Patient Last Name | Auto-filled if patient exists |
+| Date of Birth | Format: YYYY-MM-DD |
+| Sex | M or F |
+| Facility | Facility name or code |
+| Diagnostic Code | ICD code |
+| Quantity | Number of units (default: 1) |
+| Comments | Additional notes |
+
+## Field Mapping
+
+During the mapping step:
+1. Each column from your file appears on the left
+2. Select the corresponding IntelAGENT field from the dropdown
+3. Skip columns you don't want to import
+4. Required fields must be mapped
+
+## Validation Errors
+
+Common validation errors:
+- **Invalid health card** - Check the format (10 digits)
+- **Invalid billing code** - Verify the code exists in OHIP schedule
+- **Missing required field** - Ensure all required columns are mapped
+- **Invalid date format** - Use YYYY-MM-DD format
+
+## Error Handling
+
+When errors occur:
+1. Download the error report
+2. Correct issues in your original file
+3. Re-upload the corrected file
+
+## Large File Imports
+
+For files with many rows:
+- Progress bar shows import status
+- You can navigate away; import continues in background
+- Notification when complete
+
+<Warning>
+Very large imports (10,000+ rows) may take several minutes. Do not close the browser during processing.
+</Warning>
+
+## Template Download
+
+Click **Download Template** to get a pre-formatted spreadsheet with all available columns and example data.

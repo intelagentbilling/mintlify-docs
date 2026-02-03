@@ -1,0 +1,86 @@
+---
+title: "Exporting Data"
+description: "Download reports and data in Excel format for external use"
+---
+
+## Overview
+
+IntelAGENT allows you to export your data in Excel format for accounting, record-keeping, or external analysis.
+
+## Available Exports
+
+### Claims Export
+Export your claims data with filters:
+- Date range
+- Status (all, submitted, paid, rejected)
+- Facility
+- Patient
+
+### Remittance Advice Export
+Download RA data including:
+- Payment details
+- Claim-by-claim breakdown
+- Explanation codes
+
+### Revenue Report
+Export revenue summaries:
+- Daily totals
+- Monthly totals
+- Yearly summaries
+
+## How to Export
+
+<Steps>
+  <Step title="Navigate to Reports">
+    Go to **Reports** > **Excel Export**
+  </Step>
+  <Step title="Select Report Type">
+    Choose the type of data you want to export
+  </Step>
+  <Step title="Configure Filters">
+    Set date range and any additional filters
+  </Step>
+  <Step title="Generate Report">
+    Click **Generate** to create the export
+  </Step>
+  <Step title="Download">
+    Click **Download** when the file is ready
+  </Step>
+</Steps>
+
+## Export Format
+
+All exports are in Excel (.xlsx) format with:
+- Header row with column names
+- Data rows
+- Summary totals where applicable
+
+## Column Descriptions
+
+### Claims Export Columns
+| Column | Description |
+|--------|-------------|
+| Claim ID | Unique identifier |
+| Patient Name | Full patient name |
+| Health Card | OHIP number |
+| Service Date | Date of service |
+| Billing Codes | Comma-separated list |
+| Billed Amount | Total claimed |
+| Paid Amount | Amount received |
+| Status | Current claim status |
+
+## Scheduled Exports
+
+Set up automatic exports:
+1. Go to **Settings** > **Scheduled Reports**
+2. Select report type and frequency
+3. Enter email address for delivery
+4. Save schedule
+
+<Note>
+Scheduled exports are available on Standard and Premium plans only.
+</Note>
+
+## Data Retention
+
+Exported data is available for download for 30 days. After that, generate a new export.
