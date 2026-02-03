@@ -1,44 +1,32 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "willow",
   "name": "IntelAGENT",
   "homepage": "index",
   "colors": {
-    "primary": "#5393ce",
-    "light": "#8fb8df",
-    "dark": "#4d516c"
+    "primary": "#3a7ab8",
+    "light": "#5393ce",
+    "dark": "#2d5a8a"
   },
   "favicon": "/favicon.svg",
+  "sidebar": {
+    "items": "border"
+  },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Getting Started",
-        "groups": [
-          {
-            "group": "Welcome",
-            "pages": [
-              "docs/getting-started/introduction",
-              "docs/getting-started/quick-start"
-            ]
-          },
-          {
-            "group": "Setup",
-            "pages": [
-              "docs/getting-started/designation"
-            ]
-          }
+        "group": "Getting Started",
+        "pages": [
+          "docs/getting-started/introduction",
+          "docs/getting-started/quick-start",
+          "docs/getting-started/designation"
         ]
       },
       {
-        "tab": "Web App",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "docs/web-app/overview",
-              "docs/web-app/dashboard"
-            ]
-          },
+        "group": "Web App",
+        "pages": [
+          "docs/web-app/overview",
+          "docs/web-app/dashboard",
           {
             "group": "Claims",
             "pages": [
@@ -73,15 +61,10 @@
         ]
       },
       {
-        "tab": "Mobile App",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "docs/mobile-app/overview",
-              "docs/mobile-app/installation"
-            ]
-          },
+        "group": "Mobile App",
+        "pages": [
+          "docs/mobile-app/overview",
+          "docs/mobile-app/installation",
           {
             "group": "Claims",
             "pages": [
@@ -97,43 +80,20 @@
               "docs/mobile-app/rosters/bulk-billing"
             ]
           },
-          {
-            "group": "Analytics",
-            "pages": [
-              "docs/mobile-app/revenue-tracking"
-            ]
-          }
+          "docs/mobile-app/revenue-tracking"
         ]
       },
       {
-        "tab": "Billing & Account",
-        "groups": [
-          {
-            "group": "Plans",
-            "pages": [
-              "docs/billing/plans-pricing",
-              "docs/billing/managing-subscription"
-            ]
-          },
-          {
-            "group": "Account",
-            "pages": [
-              "docs/account/profile-settings",
-              "docs/account/authentication"
-            ]
-          }
+        "group": "Billing & Account",
+        "pages": [
+          "docs/billing/plans-pricing",
+          "docs/billing/managing-subscription",
+          "docs/account/profile-settings",
+          "docs/account/authentication"
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Support",
-          "href": "mailto:agent@intelagent.ca",
-          "icon": "envelope"
-        }
-      ]
-    }
+    "global": {}
   },
   "logo": {
     "light": "/logo.svg",
