@@ -1,0 +1,3 @@
+.nav-logo {
+  height: 4rem !important; /* Override h-12 (3rem) to h-16 (4rem) for larger logo */
+}
