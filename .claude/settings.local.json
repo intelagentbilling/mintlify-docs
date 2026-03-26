@@ -12,7 +12,12 @@
       "WebFetch(domain:www.cab.md)",
       "WebFetch(domain:dr-bill.ca)",
       "Bash(openssl s_client:*)",
-      "Bash(openssl x509:*)"
+      "Bash(openssl x509:*)",
+      "Bash(dig:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git pull:*)"
     ]
   }
 }

@@ -85,6 +85,16 @@
         ]
       },
       {
+        "group": "William Osler Hospital Reimbursement",
+        "pages": [
+          "docs/william-osler/overview",
+          "docs/william-osler/claim-submission",
+          "docs/william-osler/remittance-payment",
+          "docs/william-osler/support",
+          "docs/william-osler/faq"
+        ]
+      },
+      {
         "group": "Billing & Account",
         "pages": [
           "docs/billing/plans-pricing",
