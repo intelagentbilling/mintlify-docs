@@ -45,6 +45,12 @@
             ]
           },
           {
+            "group": "Rosters",
+            "pages": [
+              "docs/web-app/rosters/sharing-rosters"
+            ]
+          },
+          {
             "group": "Reports",
             "pages": [
               "docs/web-app/reports/remittance-advices",
@@ -78,6 +84,8 @@
             "group": "Rosters",
             "pages": [
               "docs/mobile-app/rosters/managing-rosters",
+              "docs/mobile-app/rosters/batch-scanning",
+              "docs/mobile-app/rosters/sharing-rosters",
               "docs/mobile-app/rosters/bulk-billing"
             ]
           },

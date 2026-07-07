@@ -1,0 +1,70 @@
+<svg viewBox="0 0 340 700" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+  <defs>
+    <filter id="blur"><feGaussianBlur stdDeviation="2.4"/></filter>
+    <clipPath id="screen"><rect x="16" y="16" width="308" height="668" rx="34"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="324" height="684" rx="42" fill="#0b0e13"/>
+  <g clip-path="url(#screen)">
+    <rect x="16" y="16" width="308" height="668" fill="#fbfbfc"/>
+
+    <!-- header -->
+    <rect x="16" y="16" width="308" height="58" fill="#ffffff"/>
+    <line x1="16" y1="74" x2="324" y2="74" stroke="#e2e6ea"/>
+    <text x="34" y="52" font-size="16" fill="#4d516c">‹</text>
+    <text x="170" y="52" text-anchor="middle" font-size="17" font-weight="700" fill="#131820">Review scans</text>
+
+    <!-- Eligible -->
+    <g transform="translate(32,92)">
+      <circle cx="5" cy="6" r="5" fill="#52bf9f"/>
+      <text x="18" y="10" font-size="11.5" font-weight="700" letter-spacing="0.6" fill="#6f6f6f">ELIGIBLE · 9</text>
+    </g>
+    <g font-size="14">
+      <g transform="translate(28,110)">
+        <rect width="284" height="52" rx="12" fill="#fff" stroke="#e2e6ea"/>
+        <text x="14" y="24" font-weight="600" fill="#131820" filter="url(#blur)">Margaret Chen</text>
+        <text x="14" y="40" font-size="11.5" fill="#6f6f6f" filter="url(#blur)">4815 673 291 · KM · F 1962</text>
+        <rect x="196" y="16" width="74" height="22" rx="11" fill="#d7efe4"/>
+        <text x="233" y="31" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17966a">Eligible</text>
+      </g>
+      <g transform="translate(28,170)">
+        <rect width="284" height="52" rx="12" fill="#fff" stroke="#e2e6ea"/>
+        <text x="14" y="24" font-weight="600" fill="#131820" filter="url(#blur)">David Okafor</text>
+        <text x="14" y="40" font-size="11.5" fill="#6f6f6f" filter="url(#blur)">2947 118 604 · RA · M 1988</text>
+        <rect x="196" y="16" width="74" height="22" rx="11" fill="#d7efe4"/>
+        <text x="233" y="31" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17966a">Eligible</text>
+      </g>
+    </g>
+
+    <!-- Checking -->
+    <g transform="translate(32,244)">
+      <circle cx="5" cy="6" r="5" fill="#6f6f6f"/>
+      <text x="18" y="10" font-size="11.5" font-weight="700" letter-spacing="0.6" fill="#6f6f6f">CHECKING · 2</text>
+    </g>
+    <g transform="translate(28,262)">
+      <rect width="284" height="52" rx="12" fill="#fff" stroke="#e2e6ea"/>
+      <text x="14" y="24" font-size="14" font-weight="600" fill="#131820" filter="url(#blur)">7734 201 558</text>
+      <text x="14" y="40" font-size="11.5" fill="#6f6f6f" filter="url(#blur)">7734 201 558 · TT</text>
+      <circle cx="233" cy="26" r="8" fill="none" stroke="#c7c7cd" stroke-width="3" stroke-dasharray="30 12"/>
+    </g>
+
+    <!-- Needs attention -->
+    <g transform="translate(32,336)">
+      <circle cx="5" cy="6" r="5" fill="#e04668"/>
+      <text x="18" y="10" font-size="11.5" font-weight="700" letter-spacing="0.6" fill="#6f6f6f">NEEDS ATTENTION · 1</text>
+      <text x="280" y="10" text-anchor="end" font-size="10.5" font-weight="600" fill="#3a7ab8">tap to fix</text>
+    </g>
+    <g transform="translate(28,354)">
+      <rect width="284" height="56" rx="12" fill="#fff" stroke="#e2e6ea"/>
+      <text x="14" y="24" font-size="14" font-weight="600" fill="#131820" filter="url(#blur)">1098 445 320</text>
+      <text x="14" y="39" font-size="11.5" fill="#6f6f6f" filter="url(#blur)">1098 445 320 · XL</text>
+      <text x="14" y="52" font-size="10.5" font-weight="600" fill="#e04668">Version code not recognized</text>
+      <text x="256" y="32" font-size="14" fill="#4d516c">✎</text>
+    </g>
+
+    <!-- save bar -->
+    <rect x="16" y="628" width="308" height="56" fill="#fff"/>
+    <line x1="16" y1="628" x2="324" y2="628" stroke="#e2e6ea"/>
+    <rect x="32" y="640" width="276" height="40" rx="12" fill="#52bf9f"/>
+    <text x="170" y="665" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Save 9 patients</text>
+  </g>
+</svg>

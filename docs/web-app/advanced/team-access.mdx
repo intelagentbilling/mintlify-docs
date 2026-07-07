@@ -1,93 +1,78 @@
 ---
-title: "Team Access"
-description: "Delegate billing tasks to team members with role-based permissions"
+title: "Team & Access"
+description: "Invite delegates to help manage your billing, and control what they can see and do"
 ---
 
 ## Overview
 
-Team Access allows you to invite team members to help manage your billing while controlling what they can see and do.
+**Team & Access** is where you invite **delegates** — colleagues or billing staff who can work in your account on your behalf. You control what each delegate can do (their role) and which claims they can see (their scope), and you can suspend or remove their access at any time.
 
-## Accessing Team Settings
+This is also where you can [share all your rosters](/docs/web-app/rosters/sharing-rosters) with a single code.
 
-Navigate to **Settings** > **Team Access**.
+## Accessing Team & Access
 
-## User Roles
+Go to **Settings → Team & Access**.
 
-IntelAGENT supports role-based access control:
+<Frame>
+  <img src="/images/docs/web-app/roster-sharing/07-settings-share-all.png" alt="The Team & Access settings page with an Invite Delegate button, the delegates list, and the Share all my rosters section" />
+</Frame>
 
-| Role | Permissions |
-|------|-------------|
-| Owner | Full access to all features and settings |
-| Admin | Manage claims, patients, and reports; cannot manage billing or team |
-| Billing | Create and submit claims; view reports |
-| Viewer | Read-only access to claims and reports |
-
-## Inviting Team Members
+## Inviting a delegate
 
 <Steps>
-  <Step title="Open Team Access">
-    Go to **Settings** > **Team Access**
+  <Step title="Click Invite Delegate">
+    From **Settings → Team & Access**, click **Invite Delegate**.
   </Step>
-  <Step title="Click Invite">
-    Click **Invite Team Member**
+  <Step title="Enter their email">
+    Enter the email address of the person you're inviting.
   </Step>
-  <Step title="Enter Details">
-    - Email address
-    - Role
-    - Facility access (optional)
+  <Step title="Choose their role(s)">
+    Assign one or more **roles**. A delegate's roles determine what they're allowed to do in your account.
   </Step>
-  <Step title="Send Invitation">
-    Click **Send**. The invitee receives an email with instructions.
+  <Step title="Set their scope">
+    Choose what the delegate can access:
+    - **Facilities** — grant access to **all** facilities, or select **specific** facilities.
+    - **MOH groups** — grant access to **all** billing (MOH) groups, or select **specific** ones.
+
+    Leave both on **all** for full access, or narrow them for a multi-location or multi-group practice.
+  </Step>
+  <Step title="Send the invitation">
+    Send the invite. The delegate receives an email to accept it, and appears in your delegates list as **Pending** until they accept.
   </Step>
 </Steps>
 
-## Managing Invitations
+## Delegate status
 
-View pending invitations and:
-- Resend invitation email
-- Cancel invitation
-- Modify role before acceptance
+Each delegate shows a status:
 
-## Facility-Based Access
+| Status | Meaning |
+|--------|---------|
+| **Pending** | Invited, but hasn't accepted yet |
+| **Active** | Accepted and currently has access |
+| **Suspended** | Access temporarily turned off; can be restored |
 
-Restrict team members to specific facilities:
+## Managing delegates
 
-1. When inviting or editing a user
-2. Under **Facility Access**, select specific facilities
-3. User can only see claims and patients for those facilities
+Use the menu (⋮) next to a delegate to:
 
-<Note>
-Leave facility access blank to grant access to all facilities.
-</Note>
+- **Edit** — change their roles, facility scope, or MOH group scope.
+- **Resend invitation** — send the invite email again (for a pending delegate).
+- **Suspend** — temporarily turn off access without removing them.
+- **Restore** — re-enable a suspended delegate.
+- **Remove** — permanently remove their access.
 
-## Modifying Team Members
-
-To change a team member's access:
-1. Find them in the team list
-2. Click **Edit**
-3. Update role or facility access
-4. Save changes
-
-## Removing Team Members
-
-1. Find the team member
-2. Click **Remove**
-3. Confirm removal
+Toggle **Show revoked** to include suspended and removed delegates in the list.
 
 <Warning>
-Removed users immediately lose access. Any work in progress may be lost.
+Suspending or removing a delegate takes effect immediately — they lose access to your account right away.
 </Warning>
 
-## Activity Logging
+## Share all your rosters
 
-Track team activity:
-- See who created or modified claims
-- View login history
-- Audit trail for compliance
+The same page has a **Share all my rosters** section, giving one code that lets a colleague browse and copy any of your rosters. See [Sharing Rosters](/docs/web-app/rosters/sharing-rosters) for details.
 
-## Best Practices
+## Best practices
 
-- **Principle of least privilege** - Grant only the access needed
-- **Regular reviews** - Periodically audit team access
-- **Facility restrictions** - Use for multi-location practices
-- **Remove promptly** - Revoke access when team members leave
+- **Least privilege** — give a delegate only the roles and scope they need.
+- **Scope by facility or group** — for multi-location practices, restrict delegates to the facilities or MOH groups they actually work with.
+- **Review regularly** — audit your delegates periodically and remove anyone who no longer needs access.
