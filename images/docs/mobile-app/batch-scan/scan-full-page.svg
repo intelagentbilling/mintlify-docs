@@ -1,0 +1,39 @@
+<svg viewBox="0 0 340 700" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+  <defs>
+    <filter id="blur"><feGaussianBlur stdDeviation="2.6"/></filter>
+    <clipPath id="screen"><rect x="16" y="16" width="308" height="668" rx="34"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="324" height="684" rx="42" fill="#0b0e13"/>
+  <g clip-path="url(#screen)">
+    <rect x="16" y="16" width="308" height="668" fill="#10151b"/>
+
+    <!-- printed page of cards being scanned -->
+    <g transform="translate(52,120)">
+      <rect x="-6" y="-10" width="216" height="360" rx="10" fill="#e7ecf2" transform="rotate(-1.5 100 170)"/>
+      <text x="100" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#4d516c">PATIENT LIST</text>
+      <g font-size="15" font-weight="600" fill="#1c2530" filter="url(#blur)" letter-spacing="1">
+        <text x="14" y="52">4815 673 291 KM</text>
+        <text x="14" y="86">2947 118 604 RA</text>
+        <text x="14" y="120">5623 907 412 GC</text>
+        <text x="14" y="154">3390 662 147 BK</text>
+        <text x="14" y="188">7734 201 558 TT</text>
+        <text x="14" y="222">1098 445 320 XL</text>
+        <text x="14" y="256">6621 038 490 DA</text>
+        <text x="14" y="290">8842 776 013 MP</text>
+      </g>
+    </g>
+
+    <!-- close (top-left) -->
+    <circle cx="42" cy="52" r="14" fill="rgba(0,0,0,0.35)"/>
+    <text x="42" y="57" text-anchor="middle" font-size="16" fill="#fff">✕</text>
+
+    <!-- bottom pill: spinner + count + Done -->
+    <g transform="translate(52,606)">
+      <rect x="0" y="0" width="236" height="46" rx="23" fill="rgba(0,0,0,0.72)"/>
+      <circle cx="26" cy="23" r="8" fill="none" stroke="#52bf9f" stroke-width="3" stroke-dasharray="30 12"/>
+      <text x="46" y="28" font-size="14" font-weight="700" fill="#fff">12 found</text>
+      <rect x="150" y="7" width="78" height="32" rx="16" fill="#52bf9f"/>
+      <text x="189" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Done</text>
+    </g>
+  </g>
+</svg>

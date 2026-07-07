@@ -1,0 +1,110 @@
+---
+title: "Batch Scanning Health Cards"
+description: "Scan a whole page of health cards at once, validate them, and save them as patients or a roster"
+---
+
+## Overview
+
+Batch scanning lets you capture **many health cards in one go** — point your phone at a printed page (or a stack of cards) and the scanner reads every health number it can see, validates them against the Ministry, and lets you save the results as searchable patients or as a new roster.
+
+It's built into the scanner you already use, so there's no separate tool to learn — just a **Scan full page** button inside the camera.
+
+<Note>
+Batch scanning is for **OHIP** health cards. The single-card scanner (with the red guide box) is still the default for scanning one card at a time.
+</Note>
+
+## Where to find it
+
+The **Scan full page** button appears inside the camera in two places:
+
+- **New Claim** — tap the camera icon in the header, then **Scan full page**.
+- **Add Patient** (from the Rosters tab) — open the scanner, then **Scan full page**.
+
+<Frame>
+  <img src="/images/docs/mobile-app/batch-scan/scan-full-page.svg" alt="The camera in full-page mode reading a page of health cards, showing a live count of cards found and a Done button" />
+</Frame>
+
+## Scanning a page
+
+<Steps>
+  <Step title="Turn on full-page mode">
+    Open the scanner and tap **Scan full page**. The red guide box disappears — the scanner now reads the entire frame instead of a single card.
+  </Step>
+  <Step title="Point at the page">
+    Hold your phone over the page of health cards. You'll see **"Reading page… N found"** and a running count as numbers are recognized, with a short buzz each time a new card is picked up.
+  </Step>
+  <Step title="Tap Done">
+    When the count matches the number of cards on the page, tap **Done** to move to the review screen.
+  </Step>
+</Steps>
+
+<Tip>
+**For the best accuracy**, fill the frame with the page and keep the phone steady in good light. If numbers are being missed or misread, scan **half a page at a time** — the closer you get, the larger the text, and the more reliably it reads.
+</Tip>
+
+## Reviewing the batch
+
+After you tap Done, the app checks every scanned number against the Ministry's Health Card Validation service and groups the results:
+
+<Frame>
+  <img src="/images/docs/mobile-app/batch-scan/review.svg" alt="The review screen grouping scanned cards into Eligible, Checking, and Needs attention sections" />
+</Frame>
+
+- **Eligible** — the health card is valid and ready to save. The patient's name comes back from the Ministry.
+- **Checking** — validation is still in progress.
+- **Needs attention** — the card came back not eligible (often a misread version code) or couldn't be validated.
+
+Validation runs automatically and retries transient failures on its own — you don't need to re-run anything. Nothing is saved until you choose to.
+
+## Fixing a card that needs attention
+
+A wrong or missing version code is the usual reason a card lands in **Needs attention**. Tap the card to fix it:
+
+<Frame>
+  <img src="/images/docs/mobile-app/batch-scan/fix-card.svg" alt="The Fix card sheet with editable health number and version fields, plus options to re-check or rescan the single card" />
+</Frame>
+
+- **Edit by hand** — correct the health number or version, then tap **Re-check with OHIP** to validate again.
+- **Rescan this card** — open the single-card scanner for a clean read of just that card.
+
+Either way, the card re-validates and moves to **Eligible** if it passes.
+
+## Saving the batch
+
+Once your cards are validated, tap **Save**. What you can do with them depends on where you started:
+
+<Frame>
+  <img src="/images/docs/mobile-app/batch-scan/save-options.svg" alt="The save sheet offering Create a roster, Add to existing roster, and Just save as patients" />
+</Frame>
+
+- **Create a roster** — name a new roster and file all the patients into it.
+- **Add to existing roster** — pick one of your existing rosters.
+- **Just save as patients** — keep the patients without a roster. They become searchable in **New Claim** by name, but don't appear as a roster or on a billing sheet.
+
+<Info>
+"Just save as patients" is handy when you simply want the patients available to bill later. When you start a new claim and search by name, saved patients show up alongside patients you've already billed — even though there's no claim for them yet.
+</Info>
+
+When you scan from **Add Patient**, the batch is added straight to that roster.
+
+## Duplicates
+
+Patients you've already saved (in any roster or from a previous scan) aren't created twice — the app matches on the health card and skips anything already on file, so re-scanning a page is safe.
+
+## Privacy
+
+Health card numbers and patient details are handled the same way as everywhere else in the app — encrypted in transit and stored securely. Validation happens over a secure connection to the Ministry service.
+
+## Troubleshooting
+
+### The count is higher than the number of cards
+A page of small print can produce the odd misread. These don't validate, so they land in **Needs attention** — remove them with the **✕**, or fix them if they're real cards with a bad read.
+
+### Numbers aren't being picked up
+- Improve the lighting and hold the phone steady.
+- Get closer — scan half a page at a time.
+- Make sure you're in **full-page** mode (no red box).
+
+### A card stays in "Needs attention"
+- Tap it and correct the version code by hand, or rescan the single card.
+- If validation keeps failing for every card, the Ministry service may be temporarily unavailable — try again shortly.
