@@ -20,6 +20,7 @@
         "pages": [
           "docs/getting-started/introduction",
           "docs/getting-started/quick-start",
+          "docs/getting-started/onboarding",
           "docs/getting-started/designation"
         ]
       },
@@ -98,6 +99,7 @@
           "docs/william-osler/overview",
           "docs/william-osler/claim-submission",
           "docs/william-osler/remittance-payment",
+          "docs/william-osler/bank-account",
           "docs/william-osler/support",
           "docs/william-osler/faq"
         ]
