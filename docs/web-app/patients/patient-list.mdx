@@ -53,7 +53,31 @@ A roster is a group of patients associated with a specific facility or billing c
     4. Enter patient details
     5. Click **Add**
   </Tab>
+  <Tab title="Import from File">
+    1. Select the roster
+    2. Upload a spreadsheet (`.xlsx`, `.xls`, `.csv`) or a patient-list PDF
+    3. Review the preview — each row shows the name, OHIP, admission date, diagnostic code, and any issues
+    4. Click **Import** to add the patients to the roster
+  </Tab>
 </Tabs>
+
+### Importable Columns
+
+The importer auto-detects columns by their header, so you don't have to map fields manually. Any of the accepted header names (case-insensitive) work.
+
+| Column | Accepted headers | Required | Notes |
+|--------|------------------|----------|-------|
+| Patient name | Patient Name, Resident Name, Name, Full Name | Recommended | A single `Last, First` column, or separate First Name / Last Name columns |
+| Health card | Health Card Number, Health Care Number, HCN, OHIP, Health # | **Required** | 10 digits. A version code may be appended (e.g. `6456462230NW`) or live in its own column |
+| Version code | Version Code, Version, VC | Optional | 2 letters. Needed to validate a health card |
+| Date of birth | Date of Birth, DOB, Birth Date | Optional | Filled in automatically from health-card validation when available |
+| Sex | Sex, Gender | Optional | Filled in automatically from health-card validation when available |
+| Admission date | Admission Date, Admit Date, Admitted | Optional | Per-roster default (see below) |
+| Diagnostic code | Dx, Diagnosis, Diagnostic Code, Dx Code | Optional | Per-roster default (see below) |
+
+<Note>
+Only the health card is required — everything else is optional. Click **Download Template** on the import screen for a pre-formatted spreadsheet with every column.
+</Note>
 
 ### Removing Patients
 
@@ -64,6 +88,22 @@ A roster is a group of patients associated with a specific facility or billing c
 <Note>
 Removing a patient from a roster doesn't delete their records or claims.
 </Note>
+
+## Editing a Patient
+
+Click the **pencil** icon next to a patient in the roster to edit their details.
+
+- **Demographics** (name, date of birth, sex) update the shared patient record.
+- **Admission date** and **Diagnostic code** are saved as **per-roster defaults** for that patient — they apply only to this roster, so the same patient can have different defaults in different rosters. You can re-run health-card validation from the edit form to refresh the name, date of birth, and sex.
+
+### Admission date and diagnostic code defaults
+
+These two fields act as fallbacks for the billing sheet:
+
+- When you create a claim for the patient and they **already have a claim on that service date**, that claim's admission date and diagnosis pre-fill the billing sheet.
+- When they have **no prior claim**, the roster default admission date and diagnostic code pre-fill instead.
+
+Both are optional, can be set during import (see [Importable Columns](#importable-columns)) or in the edit form, and appear on the patient's card in the roster once set.
 
 ## Billing Code Associations
 
