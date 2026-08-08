@@ -28,11 +28,11 @@
         "group": "Guides",
         "pages": [
           "docs/guides/overview",
-          "docs/guides/bulk-upload",
-          "docs/guides/roster-billing",
           "docs/guides/bill-one-visit",
+          "docs/guides/find-and-fix-claims",
           "docs/guides/create-a-roster",
-          "docs/guides/find-and-fix-claims"
+          "docs/guides/roster-billing",
+          "docs/guides/bulk-upload"
         ]
       },
       {

@@ -7,36 +7,32 @@ These guides are organised by what you're trying to get done, not by which scree
 it happens on. If you're looking for what a particular page does, the
 [Web App](/docs/web-app/overview) section covers that.
 
-## Billing a day's work
+They're in the order most people need them: one claim by hand, then what to do
+when one comes back, then the setup that stops you doing it by hand at all.
 
 <CardGroup cols={2}>
-  <Card title="Import Claims from my EMR" icon="file-arrow-up" href="/docs/guides/bulk-upload">
-    Turn an EMR export into a day's worth of claims in one pass.
+  <Card title="Submit a Claim" icon="file-pen" href="/docs/guides/bill-one-visit">
+    The full claim form, for the visit that doesn't fit a pattern.
+  </Card>
+  <Card title="Fix a rejected claim" icon="magnifying-glass" href="/docs/guides/find-and-fix-claims">
+    Find what the Ministry refused, correct it, and send it back.
+  </Card>
+  <Card title="Set up a patient roster" icon="list-check" href="/docs/guides/create-a-roster">
+    Build a recurring patient group once, then bill it in seconds every visit.
   </Card>
   <Card title="Bill a whole roster for a visit" icon="users" href="/docs/guides/roster-billing">
     Code and submit an entire patient group from one sheet.
   </Card>
-  <Card title="Bill a single visit" icon="file-pen" href="/docs/guides/bill-one-visit">
-    The full claim form, for the visit that doesn't fit a pattern.
+  <Card title="Import Claims from my EMR" icon="file-arrow-up" href="/docs/guides/bulk-upload">
+    Turn an EMR export into a day's worth of claims in one pass.
   </Card>
 </CardGroup>
 
-## Setting yourself up to be fast
+## Also useful
 
 <CardGroup cols={2}>
-  <Card title="Set up a patient roster" icon="list-check" href="/docs/guides/create-a-roster">
-    Build a recurring patient group once, then bill it in seconds every visit.
-  </Card>
   <Card title="Share a roster with a colleague" icon="share-nodes" href="/docs/web-app/rosters/sharing-rosters">
     Hand a copy of a patient list to someone covering for you.
-  </Card>
-</CardGroup>
-
-## Getting paid, and chasing what wasn't
-
-<CardGroup cols={2}>
-  <Card title="Find a claim and fix what went wrong" icon="magnifying-glass" href="/docs/guides/find-and-fix-claims">
-    Track claims by status and act on the ones that need you.
   </Card>
   <Card title="Read a remittance advice" icon="receipt" href="/docs/web-app/reports/remittance-advices">
     What the Ministry paid, against what you claimed.
@@ -53,12 +49,12 @@ If you're new, the shortest path to a submitted claim is:
     [Onboarding](/docs/getting-started/onboarding).
   </Step>
   <Step title="Bill one visit by hand">
-    Use [the full claim form](/docs/guides/bill-one-visit) once, so you've seen
-    what a claim is made of.
+    [Submit a claim](/docs/guides/bill-one-visit) once, so you've seen what a
+    claim is made of.
   </Step>
   <Step title="Then stop doing it by hand">
-    Move to [spreadsheet import](/docs/guides/bulk-upload) or
-    [rosters](/docs/guides/create-a-roster), depending on whether your day comes
-    out of an EMR or off a floor.
+    Move to [rosters](/docs/guides/create-a-roster) or
+    [EMR import](/docs/guides/bulk-upload), depending on whether your day comes
+    off a floor or out of an EMR.
   </Step>
 </Steps>
