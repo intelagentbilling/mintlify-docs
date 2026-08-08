@@ -25,6 +25,15 @@
         ]
       },
       {
+        "group": "Guides",
+        "pages": [
+          "docs/guides/bulk-upload",
+          "docs/guides/create-a-roster",
+          "docs/guides/roster-billing",
+          "docs/guides/find-and-fix-claims"
+        ]
+      },
+      {
         "group": "Web App",
         "pages": [
           "docs/web-app/overview",
@@ -121,7 +130,7 @@
     "light": "/logo.svg",
     "dark": "/logo.svg"
   },
-    "navbar": {
+  "navbar": {
     "links": [
       {
         "label": "Support",
