@@ -27,9 +27,11 @@
       {
         "group": "Guides",
         "pages": [
+          "docs/guides/overview",
           "docs/guides/bulk-upload",
-          "docs/guides/create-a-roster",
           "docs/guides/roster-billing",
+          "docs/guides/bill-one-visit",
+          "docs/guides/create-a-roster",
           "docs/guides/find-and-fix-claims"
         ]
       },
