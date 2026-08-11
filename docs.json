@@ -25,6 +25,17 @@
         ]
       },
       {
+        "group": "Guides",
+        "pages": [
+          "docs/guides/overview",
+          "docs/guides/bill-one-visit",
+          "docs/guides/find-and-fix-claims",
+          "docs/guides/create-a-roster",
+          "docs/guides/roster-billing",
+          "docs/guides/bulk-upload"
+        ]
+      },
+      {
         "group": "Web App",
         "pages": [
           "docs/web-app/overview",
@@ -121,7 +132,7 @@
     "light": "/logo.svg",
     "dark": "/logo.svg"
   },
-    "navbar": {
+  "navbar": {
     "links": [
       {
         "label": "Support",

@@ -1,0 +1,77 @@
+---
+title: "Submit a Claim"
+description: "Raise a single claim from scratch, and let the health card fill in the rest"
+---
+
+The full claim form is for the visit that doesn't fit a roster or an import — a
+consult, a one-off, anything that needs more than a code and a date.
+
+Open it with **New Claim**, top right of any screen.
+
+## Start with the health card
+
+Enter the **Health Card Number** and **VR** (version code), then **Validate**.
+
+For OHIP patients that one step fills in first name, last name, date of birth and
+sex from the Ministry's own record, so you aren't transcribing a card and you
+aren't guessing at a spelling. It also confirms the card is currently eligible,
+which is the single most common reason a claim comes back rejected.
+
+The **Payment program** dropdown is what tells IntelAGENT who is paying. OHIP is
+the default; RMB, WSIB and private claims are also available, and the fields
+adjust to what that payer needs.
+
+<Tip>
+  Validate before you code. A card that fails here would have failed at the
+  Ministry weeks later — better to find out while the patient is still in front
+  of you.
+</Tip>
+
+## Fill in the service
+
+**Service Date** is the only always-required field on this panel. The rest depend
+on what you're billing:
+
+| Field | When you need it |
+| --- | --- |
+| **Facility** | In-patient work. Also required by some codes regardless. |
+| **Admission Date** | In-patients. |
+| **Referring Physician** | Consults. |
+
+The **Today / Yesterday / Last claim date** shortcuts under the date fields are
+worth the habit — most claims are for today or yesterday, and *Last claim date*
+repeats whatever you billed last, which is what you want when you're working
+through a stack from the same day.
+
+If the referring physician isn't in the list, **Add New Physician** adds them
+without leaving the claim.
+
+## Diagnosis and codes
+
+Add the **Diagnostic Code** that best represents why you saw the patient, then
+the **Billing Codes** for what you did. Both fields search as you type.
+
+Beside each is a **Favourites** link. These are your own shortlists — the codes
+you actually bill, one click away instead of a search. **Manage** edits them. If
+you find yourself typing the same code repeatedly, put it in Favourites and stop
+typing it.
+
+Once codes are added, quantity, time and fractional percentages are editable
+directly in the table beneath, for the codes where those matter.
+
+## Submit, or don't
+
+The **Claim Total** at the bottom updates as you add codes — a check on whether
+the visit is worth what you expected before it goes anywhere.
+
+- **Submit** queues the claim for the next run to the Ministry.
+- **Save as draft** keeps it in Claims, untouched and editable, for when you're
+  missing something you'll have later.
+
+## Billing the same thing again
+
+For a repeat visit, don't start here. Find the earlier claim in **Claims** and
+use its **Copy** action — it carries the patient, codes and diagnosis over, and
+you change the date.
+
+If a claim comes back refused, see [Fix a rejected claim](/docs/guides/find-and-fix-claims).

@@ -1,0 +1,68 @@
+---
+title: "Fix a rejected claim"
+description: "Find what the Ministry refused, correct it, and send it back"
+---
+
+The Claims screen is where a claim's whole life is visible — from a draft you
+haven't sent to a payment that landed. Most days you only need one part of it:
+the claims that need something from you.
+
+## Filter to what needs attention
+
+<Frame caption="The Claims screen, filtered by status">
+  <img src="/images/docs/guides/claims-list.png" alt="The Claims screen showing claims across draft, pending and submitted statuses with totals above" />
+</Frame>
+
+The status chips across the top are the fastest way in. Each status means
+something specific:
+
+| Status | What it means | Can you still edit it? |
+| --- | --- | --- |
+| **Draft** | Saved but never sent. | Yes |
+| **Pending** | Queued to go to the Ministry on the next submission run. | Yes |
+| **Submitted** | Sent. Waiting on the Ministry's answer. | No |
+| **Rejected** | The Ministry refused it, with a reason. | Fix and resubmit |
+| **Partial** | Paid, but for less than you claimed. | Review |
+| **Successful** | Paid in full. | No |
+
+The three totals above the list — **Claims**, **Total Billed**, **Total Paid** —
+follow whichever filter you have on, so filtering to Rejected tells you what the
+rejections are costing you.
+
+## Find one claim
+
+Use the search box for a patient name, health card number or MRN. The date
+control beside it narrows to a period. They combine, so you can search one
+patient within one month.
+
+## Act on a row
+
+The icons at the right of each row are the actions available for that claim's
+status. An editable claim (draft or pending) offers more than a submitted one,
+which is deliberate — a claim already with the Ministry can't be quietly changed.
+
+- **Star** flags a claim so you can find it again with the Starred filter.
+- **Edit** opens the claim to change codes, dates or diagnosis.
+- **Copy** starts a new claim from this one, which is the quick way to bill a
+  repeat visit.
+- **Delete** removes a claim that hasn't been sent.
+
+## Fixing a rejection
+
+Filter to **Rejected** and open the claim. The rejection reason comes from the
+Ministry and names what it objected to — a diagnosis that doesn't go with the
+code, a service date outside the patient's eligibility, a missing referring
+physician. Correct that field and resubmit; the claim goes back into the queue as
+pending.
+
+<Tip>
+  If the same rejection keeps recurring across patients, it's usually a setting
+  rather than a claim. Check the service code's requirements before fixing them
+  one at a time.
+</Tip>
+
+## Export
+
+**Export** at the bottom right writes the current filtered view to a
+spreadsheet — the filter is the report. Filter to Successful over a date range
+for a paid-claims summary, or to Rejected for a list to work through.

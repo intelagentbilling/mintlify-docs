@@ -1,0 +1,82 @@
+---
+title: "Import Claims from my EMR"
+description: "Turn an EMR export into a day's worth of claims in one pass"
+---
+
+If your EMR can export the day's patient list, you never have to type those
+claims. Drop the file in, check what IntelAGENT flags, and submit.
+
+**Before you start:** an export from your EMR as `.csv`, `.xls` or `.xlsx`.
+Epic and Cerner exports work as they come out of the system.
+
+## Drop the file in
+
+Open **Claim Import** from the sidebar and drop your export onto the box.
+
+<Frame caption="The Claim Import screen, waiting for a file">
+  <img src="/images/docs/guides/import-dropzone.png" alt="The Claim Import screen with an empty drop zone" />
+</Frame>
+
+Pick the **Template** that matches where the file came from before you drop it:
+
+| Template | Use it for |
+| --- | --- |
+| Generic Epic | Epic exports, including the sticky-note column your codes live in |
+| Generic Cerner | Cerner exports |
+| Auto Detect / Create New Template | Anything else — IntelAGENT reads your column headings and asks you to confirm what it found, then saves the answer as a template you can reuse |
+
+<Tip>
+  Password-protected exports work too. If the file is encrypted, you'll be asked
+  for the password after the drop — it's used on your computer and never sent
+  anywhere.
+</Tip>
+
+## Read what came back
+
+Every row is turned into a claim and checked before you commit to anything.
+
+<Frame caption="Eight rows read from the file: seven ready, one needing a location">
+  <img src="/images/docs/guides/import-parsed.png" alt="Imported claims list showing seven successful claims and one flagged for a missing facility" />
+</Frame>
+
+The three filters at the top right are the whole review workflow:
+
+<Steps>
+  <Step title="Errors">
+    Start here. Each flagged row says what is wrong in plain words — *Facility is
+    required for this billing code*, *Diagnostic Code is required*. Open the row
+    and fix it in place.
+  </Step>
+  <Step title="Successful">
+    Rows that need nothing from you. Worth a glance, not a review.
+  </Step>
+  <Step title="All">
+    The full file, in the order it arrived.
+  </Step>
+</Steps>
+
+The running total at the bottom is what the file is worth, so you can sanity-check
+it against your own count before anything is sent.
+
+## Send them
+
+Two buttons, and the difference matters:
+
+- **Save all as drafts** puts everything in Claims for later. Nothing goes to the
+  Ministry. Use this when you want a second look, or when you're missing
+  information you'll have tomorrow.
+- **Submit N claims** sends only the rows that passed. A flagged row is never
+  submitted by accident — the count on the button is the number that will
+  actually go.
+
+<Note>
+  A row you can't fix today doesn't block the rest. Submit the ones that pass,
+  and the flagged rows stay put as drafts until you come back to them.
+</Note>
+
+## When the columns don't line up
+
+If names and codes come through blank, the template doesn't match your file.
+Choose **Auto Detect / Create New Template** instead — it reads your file's own
+headings, shows you what it thinks each column is, and lets you correct it. Save
+that mapping once and every future export from the same system reads correctly.
