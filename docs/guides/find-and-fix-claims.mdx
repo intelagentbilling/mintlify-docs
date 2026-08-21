@@ -1,6 +1,6 @@
 ---
 title: "Fix a rejected claim"
-description: "Find what the Ministry refused, correct it, and send it back"
+description: "Find what the Ministry refused or paid short, correct it, and send it back"
 ---
 
 The Claims screen is where a claim's whole life is visible — from a draft you
@@ -22,7 +22,7 @@ something specific:
 | **Pending** | Queued to go to the Ministry on the next submission run. | Yes |
 | **Submitted** | Sent. Waiting on the Ministry's answer. | No |
 | **Rejected** | The Ministry refused it, with a reason. | Fix and resubmit |
-| **Partial** | Paid, but for less than you claimed. | Review |
+| **Partial** | Paid, but for less than you claimed. | [Ask for a reassessment](#remittance-advice-inquiry-rai-ask-the-ministry-to-reassess) |
 | **Successful** | Paid in full. | No |
 
 The three totals above the list — **Claims**, **Total Billed**, **Total Paid** —
@@ -61,8 +61,87 @@ pending.
   one at a time.
 </Tip>
 
-## Export
+## Remittance Advice Inquiry (RAI) - Ask the Ministry to reassess
 
-**Export** at the bottom right writes the current filtered view to a
-spreadsheet — the filter is the report. Filter to Successful over a date range
-for a paid-claims summary, or to Rejected for a list to work through.
+A claim that was processed on the Remittance Advice can't be submitted — the
+Ministry has already ruled on it. To dispute that ruling you file a **Remittance
+Advice Inquiry** (RAI), which goes to the Ministry electronically as an eSubmit.
+
+| What happened | What to do |
+| --- | --- |
+| Refused with an error code, nothing paid | Correct the claim and resubmit |
+| Paid, but less than you billed | RAI — **Under Payment** |
+| Paid more than you billed | RAI — **Over Payment** |
+| Paid the right amount against the wrong detail | RAI — **Correction** |
+
+### Start from the claim
+
+Open the claim. **Remittance Advice Inquiry** sits in the header next to Edit
+Claim, and only appears once a remittance advice has come back for that claim —
+until then there is no assessment to inquire about.
+
+<Frame caption="A claim the Ministry paid short: one line reduced, one line paid nothing">
+  <img src="/images/docs/guides/rai-partial-claim.png" alt="Claim detail screen showing claimed $124.55, paid $33.40, an outstanding balance of $91.15, and a payment received entry on the claim timeline" />
+</Frame>
+
+The three tiles at the top are the case you are making: **Claimed** is what you
+billed, **Paid** is what arrived, and **Balance** is what you're asking about.
+The Service Codes table below breaks the same difference out line by line, which
+is the level the RAI works at.
+
+### Fill in the inquiry
+
+<Frame caption="One line ticked, with a correction type and an explanation">
+  <img src="/images/docs/guides/rai-form.png" alt="The Remittance Advice Inquiry dialog listing both service codes with claimed and paid amounts, the K005A line ticked, correction type set to Under Payment, and an explanation typed underneath" />
+</Frame>
+
+1. **Tick the lines you're inquiring about.** Only ticked lines go on the RAI —
+   a line that was paid correctly should stay unticked, or you invite the
+   assessor to look at it again.
+2. **Choose a correction type.** Under Payment, Over Payment or Correction, per
+   the table above.
+3. **Write the explanation.** A person at the Ministry reads this. Say what was
+   done, why the code applies, and what you want reassessed.
+4. **Attach an operative note** if the service needs supporting evidence. PDF
+   only, under 4.5 MB — it's merged into the RAI and submitted as one file, and
+   OHIP caps the whole thing at 5 MB. If the claim already carries a note, that
+   one is attached automatically and the dialog says so.
+5. **Submit.**
+
+<Tip>
+  Name the service code in the explanation and keep it to the facts of the
+  visit. "K005A was billed for a separate 20-minute mental health visit later
+  the same day, not as part of the A007A assessment" gives the assessor
+  something to act on; "please pay this" does not.
+</Tip>
+
+### After you submit
+
+Only one RAI can be submitted per day. It goes out on the overnight submission
+run, and until then it sits on the claim's timeline as pending.
+
+<Frame caption="The inquiry queued on the claim timeline">
+  <img src="/images/docs/guides/rai-queued.png" alt="Claim timeline showing the payment received entry followed by an RAI Submission (eSubmit) entry that reads: your RAI will be submitted to the Ministry shortly" />
+</Frame>
+
+Once it has gone, the same entry carries the Ministry's ticket number for the
+adjudication. When the decision comes back it lands underneath as **Ministry
+Response** — or as **Additional Information Requested** if they want
+documentation before deciding.
+
+<Frame caption="A decision returned against the inquiry's ticket number">
+  <img src="/images/docs/guides/rai-response.png" alt="Claim timeline showing the RAI submission with ticket number 2610432 and a Ministry Response entry stating the claim has been reassessed and the adjustment will appear on an upcoming remittance advice" />
+</Frame>
+
+A successful reassessment doesn't change the claim on the spot. The money
+arrives on a later remittance advice, and the claim's Paid total moves when that
+RA is processed.
+
+### Track every inquiry in one place
+
+**Reports** > **eSubmits** lists every RAI and documentation submission you've
+made, with its status, ticket number, and the Ministry's response.
+
+<Frame caption="The eSubmits report: one RAI waiting to go, one already answered">
+  <img src="/images/docs/guides/rai-esubmits.png" alt="The eSubmits report listing two RAI rows, one pending submission and one submitted to ministry with ticket number 2610432 and the ministry's response text" />
+</Frame>
