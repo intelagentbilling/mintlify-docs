@@ -25,6 +25,17 @@
         ]
       },
       {
+        "group": "New Physician Guide",
+        "pages": [
+          "docs/new-physician/overview",
+          "docs/new-physician/ohip-billing-number",
+          "docs/new-physician/edt-access",
+          "docs/new-physician/federal-and-wsib",
+          "docs/new-physician/out-of-province",
+          "docs/new-physician/first-year"
+        ]
+      },
+      {
         "group": "Guides",
         "pages": [
           "docs/guides/overview",
