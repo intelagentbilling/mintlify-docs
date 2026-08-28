@@ -7,9 +7,9 @@ description: "Manage patient rosters and organize patients by facility"
 
 The Patient List allows you to manage patient rosters, associate patients with facilities, and streamline billing for recurring patients.
 
-## Accessing Patient List
+## Accessing Patient Rosters
 
-Click **Patient List** in the sidebar navigation.
+Click **Patient Rosters** in the sidebar navigation, under **Roster**.
 
 ## Viewing Patients
 
@@ -31,39 +31,60 @@ A roster is a group of patients associated with a specific facility or billing c
 
 ### Creating a Roster
 
-1. Click **Add Roster**
-2. Enter roster name
-3. Select associated facility
-4. Configure default billing codes (optional)
-5. Click **Save**
+1. Click **+ New**
+2. Enter the roster name
+3. Select the associated facility (optional)
+4. Choose the MOH group, or leave it on **Solo billing**
+5. Configure default billing codes (optional)
+6. Click **Create Roster**
 
 ### Adding Patients to a Roster
 
+Select the roster, click **Add Patient**, then pick one of the three tabs.
+
 <Tabs>
-  <Tab title="Search">
-    1. Select the roster
-    2. Click **Add Patient**
-    3. Search by name or health card number
-    4. Select the patient from results
+  <Tab title="Add New Patient">
+    1. Enter the health card number and version code
+    2. Click **Validate Health Card & Load Demographics** — or fill in the name, date of birth and sex by hand
+    3. Click **Add Patient**
+
+    <Frame caption="A new patient entered by hand">
+      <img src="/images/docs/web-app/roster-import/06-add-new-patient.png" alt="The Add New Patient tab with health card number, version code, first and last name, sex and birthdate filled in" />
+    </Frame>
   </Tab>
-  <Tab title="Manual Entry">
-    1. Select the roster
-    2. Click **Add Patient**
-    3. Choose **Manual Entry**
-    4. Enter patient details
-    5. Click **Add**
+  <Tab title="Search Existing">
+    1. Search by name or health card number — this looks through the patients you have already billed or rostered, not every patient in the system
+    2. Select the patient from results
+    3. Click **Add Patient**
+
+    <Frame caption="Searching your own patients by a partial surname">
+      <img src="/images/docs/web-app/roster-import/05-search-existing.png" alt="The Search Existing tab with a partial name typed into the search box and two matching patients listed below it" />
+    </Frame>
   </Tab>
-  <Tab title="Import from File">
-    1. Select the roster
-    2. Upload a spreadsheet (`.xlsx`, `.xls`, `.csv`) or a patient-list PDF
-    3. Review the preview — each row shows the name, OHIP, admission date, diagnostic code, and any issues
-    4. Click **Import** to add the patients to the roster
+  <Tab title="Import">
+    1. Drop a spreadsheet (`.xlsx`, `.xls`, `.csv`) or a patient-list PDF onto the box — or click it to choose one
+
+       <Frame caption="The Import tab, waiting for a file">
+         <img src="/images/docs/web-app/roster-import/01-import-dropzone.png" alt="The Import tab of the Add Patient panel, showing an empty drop zone for a PDF, Excel or CSV file" />
+       </Frame>
+
+    2. Review the preview — each row shows the name, OHIP, admission date, diagnostic code, and any issues
+
+       <Frame caption="Eight residents read from a census export, ready to import">
+         <img src="/images/docs/web-app/roster-import/02-import-preview.png" alt="Import preview listing eight patients with name, OHIP number, admission date and diagnostic code" />
+       </Frame>
+
+    3. Click **Confirm Import** to add the patients to the roster
+
+       <Frame caption="The imported residents, now on the roster">
+         <img src="/images/docs/web-app/roster-import/04-imported-patients.png" alt="A roster listing eight imported patients, each with health card, admission date and diagnostic code" />
+       </Frame>
   </Tab>
 </Tabs>
 
 ### Importable Columns
 
-The importer auto-detects columns by their header, so you don't have to map fields manually. Any of the accepted header names (case-insensitive) work.
+The importer auto-detects columns by their header, so you don't have to map fields manually. Any of the accepted header names work, in any order, and extra columns are ignored — so a hospital census or rounds report (Meditech, Cerner) imports as it comes out of the system. Click **Which columns do I need?** on the import screen to see the same list in the app.
 
 | Column | Accepted headers | Required | Notes |
 |--------|------------------|----------|-------|
@@ -76,7 +97,7 @@ The importer auto-detects columns by their header, so you don't have to map fiel
 | Diagnostic code | Dx, Diagnosis, Diagnostic Code, Dx Code | Optional | Per-roster default (see below) |
 
 <Note>
-Only the health card is required — everything else is optional. Click **Download Template** on the import screen for a pre-formatted spreadsheet with every column.
+Only the health card is required — everything else is optional. Click **Download a sample Excel template** on the import screen for a pre-formatted spreadsheet with every column.
 </Note>
 
 ### Removing Patients
