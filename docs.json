@@ -160,6 +160,9 @@
   "integrations": {
     "intercom": {
       "appId": "v2fuk9gg"
+    },
+    "clarity": {
+      "projectId": "y9xfe4yo1l"
     }
   },
   "footer": {
