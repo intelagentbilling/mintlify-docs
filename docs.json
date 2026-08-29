@@ -25,17 +25,6 @@
         ]
       },
       {
-        "group": "New Physician Guide",
-        "pages": [
-          "docs/new-physician/overview",
-          "docs/new-physician/ohip-billing-number",
-          "docs/new-physician/edt-access",
-          "docs/new-physician/federal-and-wsib",
-          "docs/new-physician/out-of-province",
-          "docs/new-physician/first-year"
-        ]
-      },
-      {
         "group": "Guides",
         "pages": [
           "docs/guides/overview",
@@ -44,7 +33,8 @@
           "docs/guides/create-a-roster",
           "docs/guides/roster-billing",
           "docs/guides/bulk-upload",
-          "docs/guides/anaesthesia-stipend"
+          "docs/guides/anaesthesia-stipend",
+          "docs/new-physician/overview"
         ]
       },
       {
