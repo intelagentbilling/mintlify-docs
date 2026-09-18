@@ -1,82 +1,152 @@
 ---
 title: "Claim Submission"
-description: "Step-by-step guide to submitting hospital reimbursement claims through the IntelAGENT mobile app"
+description: "Step-by-step guide to submitting hospital reimbursement claims from the IntelAGENT mobile app or the web portal"
 ---
 
 ## Submit a Claim in 30 Seconds
 
-Submit claims directly from your phone using the IntelAGENT mobile app. The process involves six simple steps:
+You can submit William Osler claims either from your phone using the IntelAGENT mobile app, or from the web portal at [app.intelagent.ca](https://app.intelagent.ca). Both follow the same shape:
 
-1. Tap the Claims tab
-2. Enter patient MRN and demographics
-3. Confirm service details (date, facility, referring physician)
-4. Add diagnostic code
-5. Add billing code
-6. Tap Submit
+1. Start a new claim
+2. Select **HRP** as the payment program
+3. Enter the patient MRN and demographics
+4. Confirm service details (date, facility, referring physician)
+5. Add a diagnostic code
+6. Add billing codes
+7. Submit
+
+<Note>
+  Whichever device you use, select **HRP** (Hospital Reimbursement) as the payment program — that is what routes the claim to William Osler rather than OHIP.
+</Note>
 
 ## Step-by-Step Guide
 
-### 1. Open Claims
+<Tabs>
+  <Tab title="Mobile app">
+    <Steps>
+      <Step title="Open Claims">
+        Tap **Claims** in the bottom navigation to open the claim entry screen.
 
-<Frame>
-  <img src="/images/william-osler/open-claims.png" alt="IntelAGENT mobile app bottom navigation showing the Claims tab selected" />
-</Frame>
+        <Frame>
+          <img src="/images/william-osler/open-claims.png" alt="IntelAGENT mobile app bottom navigation showing the Claims tab selected" />
+        </Frame>
+      </Step>
+      <Step title="Enter patient details">
+        Enter the patient's **MRN** and demographic details including first name, last name, date of birth, and sex.
 
-Tap **Claims** in the bottom navigation to open the claim entry screen.
+        <Frame>
+          <img src="/images/william-osler/enter-patient-details.png" alt="Patient details form showing MRN, first name, last name, date of birth, and sex fields" />
+        </Frame>
 
-### 2. Enter Patient Details
+        <Note>
+          For William Osler, select **HRP** as the payment program at the top of the screen.
+        </Note>
+      </Step>
+      <Step title="Confirm service details">
+        <Frame>
+          <img src="/images/william-osler/confirm-service-information.png" alt="Service information form showing date, facility, referring physician, and date of admission fields" />
+        </Frame>
 
-<Frame>
-  <img src="/images/william-osler/enter-patient-details.png" alt="Patient details form showing MRN, first name, last name, date of birth, and sex fields" />
-</Frame>
+        Confirm the following service information:
+        - **Service date** — defaults to today's date; tap to change
+        - **Facility** — select the William Osler facility (e.g., William Osler HE... - Brampton)
+        - **Referring physician** — select if applicable
+        - **Date of admission** — enter if the service is related to a hospital admission
+      </Step>
+      <Step title="Add diagnostic code">
+        Select the diagnostic code that explains the clinical reason for the service. You can search by code number or description.
 
-Enter the patient's **MRN** and demographic details including first name, last name, date of birth, and sex.
+        <Frame>
+          <img src="/images/william-osler/add-diagnostic-code.png" alt="Diagnostic code selection showing multiple codes and a search field" />
+        </Frame>
 
-<Note>
-  For William Osler, select **HRP** as the payment program at the top of the screen.
-</Note>
+        <Tip>
+          If you don't see the diagnostic codes you need, go to **Settings** and press **Refresh Cache** to update your local data.
+        </Tip>
+      </Step>
+      <Step title="Add billing code">
+        Enter the appropriate OHIP billing code and adjust units if required. You can tap **+ Add Billing Code** to add additional service codes to the same claim.
 
-### 3. Confirm Service Details
+        <Frame>
+          <img src="/images/william-osler/add-billing-code.png" alt="Service codes section showing a consultation billing code A135A with an option to add more codes" />
+        </Frame>
 
-<Frame>
-  <img src="/images/william-osler/confirm-service-information.png" alt="Service information form showing date, facility, referring physician, and date of admission fields" />
-</Frame>
+        Use **+ Copy Previous Claim** to quickly duplicate billing codes from a recent claim.
+      </Step>
+      <Step title="Submit the claim">
+        Review the claim details and the total claimed amount, then tap **Submit Claim**. You can also tap **Save Draft** to save the claim and submit it later.
 
-Confirm the following service information:
-- **Service date** — defaults to today's date; tap to change
-- **Facility** — select the William Osler facility (e.g., William Osler HE... - Brampton)
-- **Referring physician** — select if applicable
-- **Date of admission** — enter if the service is related to a hospital admission
+        <Frame>
+          <img src="/images/william-osler/submit-the-claim.png" alt="Submit screen showing Save Draft and Submit Claim buttons with the total claimed amount" />
+        </Frame>
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Web portal">
+    <Steps>
+      <Step title="Start a new claim">
+        Open **Claims** in the left sidebar and click **New Claim** at the top right.
 
-### 4. Add Diagnostic Code
+        <Frame>
+          <img src="/images/william-osler/web/01-new-claim.png" alt="The Claims page header in the web portal with the New Claim button at the top right" />
+        </Frame>
+      </Step>
+      <Step title="Select the HRP payment program">
+        In **Patient Information**, open the **Payment program** dropdown and choose **Hospital Reimbursement | HRP**. You can type to filter the list.
 
-<Frame>
-  <img src="/images/william-osler/add-diagnostic-code.png" alt="Diagnostic code selection showing multiple codes and a search field" />
-</Frame>
+        The health card field changes to **Patient MRN**, and the OHIP-only **VR** field and **Validate** button disappear — HRP claims are not health-card validated.
 
-Select the diagnostic code that explains the clinical reason for the service. You can search by code number or description.
+        <Frame>
+          <img src="/images/william-osler/web/02-payment-program.png" alt="The Payment program dropdown filtered to the Hospital Reimbursement HRP option" />
+        </Frame>
+      </Step>
+      <Step title="Enter the patient and service details">
+        Enter the **Patient MRN**, then **First name**, **Last name**, **DOB** and **Sex** — none of these fill in automatically for HRP.
 
-<Tip>
-  If you don't see the diagnostic codes you need, go to **Settings** and press **Refresh Cache** to update your local data.
-</Tip>
+        In **Service Information**, set:
+        - **Date** — the service date; **Today**, **Yesterday** and **Last claim date** are shortcuts under the field
+        - **Facility** — the William Osler site; search by name or by its four-digit facility number
+        - **Admission Date** — required for in-patients
+        - **Referring Physician** — required for consults
 
-### 5. Add Billing Code
+        <Frame>
+          <img src="/images/william-osler/web/03-patient-service.png" alt="Patient Information and Service Information cards filled in for an HRP claim, showing Patient MRN, demographics, service date, William Osler facility, and admission date" />
+        </Frame>
 
-<Frame>
-  <img src="/images/william-osler/add-billing-code.png" alt="Service codes section showing a consultation billing code A135A with an option to add more codes" />
-</Frame>
+        <Note>
+          The MRN format depends on the service date. For services **before 3 October 2026** the MRN is a letter prefix (**N**, **M** or **E**) plus 9 digits, e.g. `N123456789`. For services **on or after** that date it is 9 digits with no prefix, e.g. `123456789`. The hint under the field always shows the format required for the date you entered.
+        </Note>
+      </Step>
+      <Step title="Add a diagnostic code">
+        In **Diagnostic Code**, search by code number or description and pick the code that best represents the patient's diagnosis. Your starred codes are under **Favourites**.
 
-Enter the appropriate OHIP billing code and adjust units if required. You can tap **+ Add Billing Code** to add additional service codes to the same claim.
+        <Frame>
+          <img src="/images/william-osler/web/04-diagnostic-code.png" alt="The Diagnostic Code search field showing the matching code 428 Congestive heart failure" />
+        </Frame>
+      </Step>
+      <Step title="Add billing codes">
+        In **Billing Codes**, search for each service code and select it. The field holds several codes at once, so add every code for the visit before moving on.
 
-Use **+ Copy Previous Claim** to quickly duplicate billing codes from a recent claim.
+        <Frame>
+          <img src="/images/william-osler/web/05-billing-code-search.png" alt="The Billing and Premium Codes search field showing the matching code C122A, MRP Day 1 after admission" />
+        </Frame>
 
-### 6. Submit the Claim
+        Each code you add becomes a row in the table below, where **Modifier** (percentage) and **Units** are editable. **Claim Total** updates as you go, and **Suggested Billing Codes** offers premiums commonly billed with what you've entered.
 
-<Frame>
-  <img src="/images/william-osler/submit-the-claim.png" alt="Submit screen showing Save Draft and Submit Claim buttons with the total claimed amount" />
-</Frame>
+        <Frame>
+          <img src="/images/william-osler/web/06-billing-table.png" alt="The billing codes table showing C122A at 100 percent, 1 unit, and a claim total of $71.80, with suggested premium codes above it" />
+        </Frame>
+      </Step>
+      <Step title="Submit the claim">
+        Check the **Claim Total** in the bar at the bottom of the page, then click **Submit**. **Save as draft** keeps the claim without submitting it, so you can finish it later from the **Draft** filter on the Claims page.
 
-Review the claim details and the total claimed amount, then tap **Submit Claim**. You can also tap **Save Draft** to save the claim and submit it later.
+        <Frame>
+          <img src="/images/william-osler/web/07-submit.png" alt="The bar at the bottom of the new claim page showing the claim total with the Save as draft and Submit buttons" />
+        </Frame>
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
 
 ## After Submission
 
