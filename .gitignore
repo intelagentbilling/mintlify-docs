@@ -1,0 +1,6 @@
+
+# Claude Code files and zips stay local
+.claude/
+CLAUDE.md
+claude.md
+*.zip
